@@ -1,9 +1,17 @@
-import express from "express";
+import 'reflect-metadata';
+import { createConnection } from 'typeorm';
 
-const app = express();
+import logger from './config/logger';
+import app from './config/express';
+const PORT = process.env.PORT || 5000;
 
-app.get("/", (request, response) => {
-    return response.json({ message: "Hello World" });
-});
-
-app.listen(3333);
+createConnection()
+    .then(() => {
+        logger.info('database connection created');
+        app.listen(PORT, () => {
+            logger.info(`Server running at ${PORT}`);
+        });
+    })
+    .catch((error: Error) => {
+        logger.info(`Database connection failed with error ${error}`);
+    });
