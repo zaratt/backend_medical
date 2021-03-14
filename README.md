@@ -23,5 +23,6 @@ Packages, plugins and frameworks used in the project:
 - [ ] Add teams
 - [ ] Add medical list
 - [ ] Assign users, doctors to the team
+- [ ] Implement team member invitation
 
 
