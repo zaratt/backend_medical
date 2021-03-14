@@ -18,7 +18,7 @@ Packages, plugins and frameworks used in the project:
 
 # TODO
  
-- [ ] Setup Environment
+- [ ] Setup Environment (progress....)
 - [ ] Add role
 - [ ] Add teams
 - [ ] Add medical list
