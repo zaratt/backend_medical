@@ -1,5 +1,5 @@
 # ABOUT THE PROJECT
-Simple project for medical team management for learning
+Small application with a list of doctors managed by a team for learning
 
 # FEATURES
 
@@ -9,15 +9,19 @@ Simple project for medical team management for learning
 
 # BUILT WITH
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Packages, plugins and frameworks used in the project:
 
-Express
-Typeorm
-Typescript
-Express JWT
+* [Express](https://expressjs.com/)
+* [Typeorm](https://typeorm.io/#/)
+* [Typescript](https://www.typescriptlang.org/docs/home.html)
+* [Express JWT](https://www.npmjs.com/package/express-jwt)
 
 # TODO
  
-<label for="file">Setup Environment</label>
-<progress id="file" value="32" max="100"> 32% </progress>
+- [ ] Setup Environment
+- [ ] Add role
+- [ ] Add teams
+- [ ] Add medical list
+- [ ] Assign users, doctors to the team
+
 
