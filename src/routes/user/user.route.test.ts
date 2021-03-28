@@ -15,6 +15,8 @@ describe('Test User Auth routes', () => {
                 email: 'test@gmail.com',
                 password: '123456',
                 name: 'Alan ',
+                role: 'Admin',
+                group: 'Grupo Osasco',
             })
             .expect(201)
             .expect((res: any) => {
@@ -46,6 +48,8 @@ describe('Test User Auth routes', () => {
                 email: 'test@gmail.com',
                 password: '123456',
                 name: 'Alan ',
+                role: 'Admin',
+                group: 'Grupo Osasco',
             })
             .expect(400)
             .expect((res: any) => {
@@ -65,6 +69,8 @@ describe('Test User Auth routes', () => {
                 email: 'test@gmail.com',
                 password: '123456',
                 name: 'Alan ',
+                role: 'Admin',
+                group: 'Grupo Osasco',
             })
             .expect(400)
             .expect((res: any) => {
