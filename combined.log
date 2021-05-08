@@ -1,9 +1,0 @@
-{"message":"Database connection failed with error Error: ER_BAD_DB_ERROR: Unknown database 'database-name'","level":"info","timestamp":"2021-03-28T19:34:14.195Z"}
-{"message":"Database connection failed with error Error: ER_BAD_DB_ERROR: Unknown database 'db_medical'","level":"info","timestamp":"2021-03-28T19:35:30.906Z"}
-{"message":"Database connection failed with error Error: ER_BAD_DB_ERROR: Unknown database 'db_medical'","level":"info","timestamp":"2021-03-28T19:35:55.604Z"}
-{"message":"database connection created","level":"info","timestamp":"2021-03-28T19:49:04.897Z"}
-{"message":"Server running at 5000","level":"info","timestamp":"2021-03-28T19:49:04.897Z"}
-{"message":"database connection created","level":"info","timestamp":"2021-03-28T20:02:12.825Z"}
-{"message":"Server running at 5000","level":"info","timestamp":"2021-03-28T20:02:12.825Z"}
-{"message":"database connection created","level":"info","timestamp":"2021-03-28T20:07:42.982Z"}
-{"message":"Server running at 5000","level":"info","timestamp":"2021-03-28T20:07:42.982Z"}
