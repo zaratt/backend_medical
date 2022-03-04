@@ -34,16 +34,19 @@ db.role.belongsToMany(db.user, {
     foreignKey: "roleId",
     otherKey: "userId"
 });
-db.group.belongsToMany(db.user, {
+
+db.group.hasOne(db.user, {
     through: "user_roles_groups",
     foreignKey: "groupId",
     otherKey: "userId"
 });
+
 db.user.belongsToMany(db.role, {
     through: "user_roles_groups",
     foreignKey: "userId",
     otherKey: "roleId"
 });
+
 db.refreshToken.belongsTo(db.user, {
     foreignKey: "userId", targetKey: "id"
 });

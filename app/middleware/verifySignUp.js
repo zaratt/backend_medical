@@ -1,6 +1,6 @@
+const { GROUPS } = require("../models");
 const db = require("../models");
 const ROLES = db.ROLES;
-// const GROUPS = db.GROUPS;
 const User = db.user;
 
 checkDuplicateUsernameOrEmail = async (req, res, next) => {
@@ -41,6 +41,21 @@ checkRolesExisted = (req, res, next) => {
             if (!ROLES.includes(req.body.roles[i])) {
                 res.status(400).send({
                     message: "Erro! Esse perfil não existe = " + req.body.roles[i]
+                });
+                return;
+            }
+        }
+    }
+
+    next();
+};
+
+checkGroupsExisted = (req, res, next) => {
+    if (req.body.groups) {
+        for (let i = 0; i < req.body.groups.length; i++) {
+            if (!GROUPS.includes(req.body.groups[i])) {
+                res.status(400).send({
+                    message: "Erro! Esse grupo não existe! = " + req.body.groups[i]
                 });
                 return;
             }
