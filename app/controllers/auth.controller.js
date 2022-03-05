@@ -29,12 +29,13 @@ exports.signup = (req, res) => {
                     });
                 });
             } else {
-                // user role = 1
-                user.setRoles([1]).then(() => {
+                // user role = 3
+                user.setRoles([3]).then(() => {
                     res.send({ message: "Usuário registrado com sucesso!" });
                 });
             }
         })
+
         .catch(err => {
             res.status(500).send({ message: err.message });
         });

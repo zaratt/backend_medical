@@ -21,7 +21,8 @@ app.use(express.urlencoded({ extended: true }));
 
 //database
 const db = require("./app/models");
-const Role = db.role;
+// const Role = db.role;
+// const Group = db.group;
 
 
 db.sequelize.sync()
